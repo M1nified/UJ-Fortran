@@ -1,0 +1,75 @@
+# Cw 1 - UNIX
+
+## Przydatne programy
+
+kwrite (edytor)
+okular (przegldanie obrazow)
+import (zrzuty ekranu)
+convert <in> <out>
+ps2epsi <in.ps> <out.epsi> (PostScript ot EPS conv)
+mc (MidnightCommander)
+rar, unrar
+tar
+history (polecenia mozna wykonac przy pomocy !<numer_polecenia>)
+man, info
+diff <file1> <file2> (porownuje wiersz po wierszu i pokazuje roznice)
+tail [-<liczba linii>] <file>
+head [-<liczba linii>] <file>
+
+## Wzroce nazw
+
+* - dowlony znak dowolna ilosc razy
+[a-z]
+[abcd]
+[0-9]
+? - jeden dowolny znak
+
+## Informacje o PC i sieci
+
+hostname
+nslookup <nazwa>
+host <nazwa> (sam adres)
+
+uname -r (wersja jadra UNIX)
+
+finger (user info)
+who
+
+lspci (jaki hardware)
+
+### Zapelnienie nosnikow
+
+df (dyski)
+du (wielkosc folderu)
+
+## Informacje o programach
+
+whereis
+which <komenda> (gdzie znajduje sie, ten ktorego faktycznie uzywamy)
+
+## Zdalne logowanie
+
+ssh -l <user> <address> -X -Y (dzieki x y mozna korzystac z GUI)
+
+# Fortran
+
+## Kompilacja
+
+```
+f95 <name>.f90 -o <name>
+```
+
+## Typy danych
+
+```
+INTEGER, PARAMETER :: range = SELECTED_INT_KIND(15)
+INTEGER(KIND=range) :: suma, n
+```
+
+`..., PARAMETER` - wartosc nie bedzie mogla byc zmieniona
+
+## PRINT
+
+Wydruk pustej linii: `PRINT *`
+
+
